@@ -1,0 +1,118 @@
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 15px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    background-color: var(--Verylightgray);
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Transparentwhite);
+    font-size: 2.1em;
+    position: absolute;
+    top: 130px;
+    left: 50px;
+}
+p{
+    position: absolute;
+    left: 50px;
+    top: 202px;
+    width: 225px;
+    height: 120px;
+    color: var(--Transparentwhite);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+}
+a{
+    text-decoration: none;
+}
+button{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    /*border: 1px solid black;*/
+    left: 50px;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(0, 0%, 95%);
+    border-radius: 25px;
+}
+img{
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    /*border: 1px black solid;*/
+    width: 324px;
+    height: 1335px;
+    margin: 90px auto 90px auto;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.first-col, .second-col, .third-col{
+    color: hsla(0, 0%, 100%, 0.75);
+    height: 445px;
+    position: relative;
+}
+.first-col{
+    background-color: hsl(31, 77%, 52%);
+    
+}
+.second-col{
+    background-color: hsl(184, 100%, 22%);
+}
+.third-col{
+    background-color: hsl(179, 100%, 13%);
+    
+}
+.btn-1, .btn-2, .btn-3{
+    font-family: 'Lexend Deca', sans-serif;
+}
+.first-colLink{
+    color: hsl(31, 77%, 52%);
+}
+.second-colLink{
+    color: hsl(184, 100%, 22%);
+}
+.third-colLink{
+    color: hsl(179, 100%, 13%);
+}
+
+.btn-1:hover{
+    background-color: hsl(31, 77%, 52%);
+    border:1px solid hsl(0, 0%, 95%);
+    .first-colLink{
+        color: hsl(0, 0%, 95%);
+    }
+}
+@media only screen and (min-width:720px){
+    .main-container{
+        margin-top: 170px;
+        width: 920px;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+    }
+    .first-col, .second-col, .third-col{
+        height: 500px;
+        width: 307px;
+        /*border: 1px black solid;*/
+    }
+    p{
+        width: 212px;
+    }
+}
